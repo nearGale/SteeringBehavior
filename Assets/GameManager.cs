@@ -43,17 +43,6 @@ public class GameManager : MonoBehaviour
 
     private void CreateEntities()
     {
-        //for(int i = -GameHelper.GetSetting().createEntityX; i < GameHelper.GetSetting().createEntityX; i++)
-        //{
-        //    for (int j = -GameHelper.GetSetting().createEntityY; j < GameHelper.GetSetting().createEntityY; j++)
-        //    {
-        //        if (i >= -GameHelper.GetSetting().createEntityXIgnore && i < GameHelper.GetSetting().createEntityXIgnore) continue;
-        //        if (j >= -GameHelper.GetSetting().createEntityYIgnore && j < GameHelper.GetSetting().createEntityYIgnore) continue;
-
-        //        ETeam eTeam = j < 0 ? ETeam.Team1 : ETeam.Team2;
-        //        EntityManager.Instance.CreateEntity(eTeam, new Vector2(i, j), _rootEntity);
-        //    }
-        //}
         string[] createTeams = GameHelper.GetSetting().createEntity.Split(';');  // 1:-5,0,-5,0;2:5,10,-5,0
         foreach (string team in createTeams)
         {

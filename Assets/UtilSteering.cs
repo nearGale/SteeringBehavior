@@ -241,18 +241,22 @@ public partial class GameHelper
                 //}
                 
                 
-                var avoidanceForceLeft = CalculatePerpendicular(aheadPos - otherEntity.pos);
-                var angle = VectorCalAngle(entity.steeringPursuit, avoidanceForceLeft);
+                //var avoidanceForceLeft = CalculatePerpendicular(aheadPos - otherEntity.pos);
+                //var angle = VectorCalAngle(entity.steeringPursuit, avoidanceForceLeft);
 
-                bool useLeftForce = Vector2.Dot(entity.steeringCollision, avoidanceForceLeft) >= 0;
-                if (useLeftForce)
-                {
-                    avoidance = avoidanceForceLeft;
-                }
-                else
-                {
-                    avoidance = CalculatePerpendicular(otherEntity.pos - entity.pos, true);
-                }
+                //bool useLeftForce = Vector2.Dot(entity.steeringCollision, avoidanceForceLeft) >= 0;
+                //if (useLeftForce)
+                //{
+                //    avoidance = avoidanceForceLeft;
+                //}
+                //else
+                //{
+                //    avoidance = CalculatePerpendicular(aheadPos - otherEntity.pos, true);
+                //}
+
+                var avoidanceForceLeft = CalculatePerpendicular(aheadPos - otherEntity.pos);
+
+                avoidance = avoidanceForceLeft;
 
 
                 var avoidanceForce = avoidance.normalized * GetSetting().forceAvoidence;

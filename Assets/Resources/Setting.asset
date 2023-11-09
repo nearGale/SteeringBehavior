@@ -20,4 +20,6 @@ MonoBehaviour:
   stopRadius: 1
   collisionAngleMax: 160
   repickTargetInterval: 0.5
-  createEntity: 1:-5,-2,-2,2;2:2,5,-2,2;3:-2,2,-5,-2;4:-2,2,2,5
+  createEntity: 1:-6,-3,-2,2;2:3,6,-2,2;3:-2,2,-6,-3;4:-2,2,3,6
+  backupFormation1: 1:-5,-2,-2,2;2:2,5,-2,2;3:-2,2,-5,-2;4:-2,2,2,5
+  backupFormation2: 1:-5,5,-4,-2;2:-5,5,2,4

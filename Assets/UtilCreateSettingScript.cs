@@ -16,4 +16,6 @@ public class UtilCreateSettingScript : ScriptableObject
     public float collisionAngleMax = 160;
     public float repickTargetInterval = 0.5f;
     public string createEntity = "";
+    public string backupFormation1 = "1:-5,-2,-2,2;2:2,5,-2,2;3:-2,2,-5,-2;4:-2,2,2,5";
+    public string backupFormation2 = "1:-5,5,-4,-2;2:-5,5,2,4";
 }
